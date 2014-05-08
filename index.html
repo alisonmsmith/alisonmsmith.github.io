@@ -1,1 +1,42 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en" ng-app="portfolio">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>alisonmsmith</title>
+
+	<script src="http://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="libs/angular/angular.js"></script>
+	<script src="libs/angular/angular-route.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/services.js"></script>
+	<script src="js/controllers.js"></script>
+	<script src="js/filters.js"></script>
+	<script src="js/directives.js"></script>
+
+
+	<!--<link rel="stylesheet" href="libs/fluxweed/style.css" />-->
+	<link href='http://fonts.googleapis.com/css?family=Handlee' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Bad+Script' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic' rel='stylesheet' type='text/css'>	<link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body data-ng-controller="main">
+	<span class="container">
+	<span id="nav">
+		<a href="#/samples" class="header">
+			<span class="icon">A</span>
+			<span class="name">ALISON M SMITH</span>
+		</a>
+		<!--<span class="nav-item"><a href="#/about">about me</a></span>-->
+    	<a href="#/samples" class="nav-item" ng-class="sampleSelected" data-ng-click="selectSamples()">samples</a>
+    	<a href="#/resume" class="nav-item" ng-class="resumeSelected" data-ng-click="selectResume()">resume</a>
+    	<a href="#/publications" class="nav-item" ng-class="publicationSelected" data-ng-click="selectPublications()">publications</a>
+	</span>
+
+	<div ng-view id="main"></div>
+</span>
+
+</body>
+</html>

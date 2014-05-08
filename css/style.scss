@@ -1,0 +1,470 @@
+
+// COLORS COURTESY OF FLAT UI
+$turquoise: #1ABC9C;
+$greensea: #16A085;
+
+$concrete: #95A5A6;
+$asbestos: #7F8C8D;
+
+$clouds: #ECF0F1;
+$silver: #BDC3C7;
+
+$handwriting: 'Bad Script', cursive;
+$headerfont: 'Lato', sans-serif;
+$main-font: 'Lato', sans-serif;
+$doc-text: 'Open Sans', sans-serif;
+$text-font: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+
+$doc-height: 600px;
+
+* {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+body {
+	font-family: $main-font;
+	background-color: $clouds;
+	height: 100%;
+}
+
+.container {
+	width: 960px;
+	margin: 10px auto;
+}
+
+/* make sure it is at least as tall as the viewport */
+html{
+	min-height:100%;
+	position:relative
+}
+
+#main {
+	position:absolute;
+	left: 150px;
+}
+
+#nav {
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    overflow:hidden;
+    z-index:-1
+}
+
+#nav {
+	background-color: darken($asbestos, 20%);
+	display: inline-block;
+	margin-left: 10px;	//float: left;
+	width: 125px;
+	height: 100%;
+	color: $silver;
+	
+	
+	.nav-item {
+		font-size: 18px;
+		cursor: pointer;
+		display: inline-block;
+		border-bottom: solid 2px $clouds;
+		padding: 10px;
+		text-align: center;
+		width: 100%;
+		transition: 0.3s;
+   	 	-webkit-transition: 0.3s;
+    	-moz-transition: 0.3s;
+    	-o-transition: 0.3s;
+    	-ms-transition: 0.3s;
+		font-family: $headerfont;
+		font-weight: 300;
+		color: $clouds;
+		text-decoration: none;
+		&:hover {
+			background-color: $asbestos;
+			color: $clouds;
+		}
+		&.selected {
+			background-color: darken($asbestos, 20%);
+			color: $clouds;
+
+		}
+	}
+}
+
+.header {
+	  transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+	cursor: pointer;
+	display: inline-block;
+	height: 100px;
+	width: 100%;
+	padding: 5px;
+	text-align: center;
+	border-bottom: solid 2px $clouds;
+	font-family: $headerfont;
+	font-weight: 300;
+	&:hover {
+		background-color: $asbestos, 20%;
+		color: $silver;
+		.name {
+			display: inline-block;
+		}
+		.icon {
+			display: none;
+		}
+	}
+	.icon {
+		color: $clouds;
+		display: inline-block;
+		font-size: 80px;
+	}
+	.name {
+		margin-top: 40px;
+		display: none;
+		font-size: 14px;
+		color: $clouds;
+	}
+}
+
+.page-title {
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 32px;
+	margin-right: 20px;
+	display: inline-block;
+	width: 100%;
+	color: $silver;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+#portfolio {
+	figure {
+		overflow: hidden;
+	    float: left;
+	    margin: 20px;
+	    width: 400px;
+	    height: 400px;
+	    background: $turquoise;
+	    line-height: 400px;
+	    position: relative;
+	    padding: 0 !important;
+	     
+	    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);   
+	 
+	    transition: 0.6s;
+	    -webkit-transition: 0.6s;
+	    -moz-transition: 0.6s;
+	    -o-transition: 0.6s;
+	    -ms-transition: 0.6s;
+	    &:hover {
+	    	dl {
+	    		opacity: 0.9;
+	    	}
+	    }
+	    a {
+	    	overflow: hidden;
+	    	img {
+	    		height: 100%;
+	    		width: auto;
+	    		min-width: 100%;
+	    	}
+	    }
+	    dl {
+	    	opacity: 0;
+		    position: absolute;
+		    left: 0;
+		    right: 0;
+		    bottom: 0;
+		    top: 0;
+		    padding: 20px;
+		    margin: 0;
+		    line-height: 2.5; 
+		    background: rgba(0, 0, 0, 0.9);
+		    color: white;
+		     
+		    transition: 0.6s;
+		    -webkit-transition: 0.6s;
+		    -moz-transition: 0.6s;
+		    -o-transition: 0.6s;
+		    -ms-transition: 0.6s;
+	    	dt {
+	    		text-transform: uppercase;
+	    		font-size: 18px;
+	    		margin-bottom: -16px;
+	    		font-family: $headerfont;
+	    		font-weight: 300;
+	    	}
+	    	dd {
+	    		margin-top: 5px;
+	    		margin-left: 0;
+	    		font-family: $headerfont;
+	    		font-size: 14px;
+	    		font-weight: 300;
+	    		line-height: 1.5em;
+	    	}
+	    }
+	}
+}
+
+.current {
+    -webkit-filter: sepia(0) !important;
+ 
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    transform: scale(1.05);
+ 
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.not-current {
+    -webkit-transform: scale(0.75); 
+    -moz-transform: scale(0.75);
+    -o-transform: scale(0.75);
+    -ms-transform: scale(0.75);
+    transform: scale(0.75);
+ 
+    -webkit-filter: grayscale(1) !important;
+}
+
+.current-li {
+    color: #000;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 50px 0;
+    text-align: center;
+}
+
+nav ul li:after {
+    margin-left: 10px;
+    content: '/';
+    color: #bbb;
+}
+ 
+nav ul li:hover:after {
+    color: #bbb;
+}
+
+nav ul li:last-child:after {
+    content: '';
+}
+
+nav ul li {
+    display: inline;
+    cursor: pointer;
+    margin-right: 10px;
+    color: #666;
+     
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    -ms-transition: 0.3s;
+}
+ 
+nav ul li:hover {
+    color: #000;
+}
+
+::selection {
+    background: #333;
+    color: $clouds;
+}
+ 
+::-webkit-scrollbar {
+    width: 9px;
+}
+ 
+::-webkit-scrollbar-track {
+    background:#eee;
+    border: thin solid $silver;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.1) inset;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background:#999;
+    border: thin solid $asbestos;
+}
+
+//
+// RESUME
+//
+
+#resume {
+	//height: $doc-height;
+	font-family: $doc-text;
+	font-weight: 300;
+	color: darken($asbestos, 20%);
+	background-color: white;
+	width: 45em;
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5); 
+	padding: 20px;
+	font-size: 16px;
+}
+
+.resume-header {
+	width: 100%;
+	display: inline-block;
+	border-bottom: solid 2px $turquoise;
+	margin-bottom: 30px;
+	padding: 10px;
+}
+
+.resume-name {
+	width: 20%;
+	padding: 5px;
+	text-transform: uppercase;
+	color: $turquoise;
+	border-right: solid 2px $turquoise;
+	float: left;
+	font-size: 24px;
+}
+
+.resume-overview {
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+.resume-concentrations {
+	text-align: center;
+	width: 100%;
+	display: inline-block;
+	color: $turquoise;
+	.resume-concentration {
+		text-transform: uppercase;
+		font-size: 14px;
+		&:after {
+			margin-left: 5px;
+			content: "/";
+			color: $turquoise;
+		}
+		&:last-child:after {
+			content: "";
+		}
+
+	}
+	margin-bottom: 20px;
+}
+
+.resume-description {
+	
+}
+
+.resume-section {
+	width: 100%;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.resume-section-name {
+	width: 20%;
+	float: left;
+	text-transform: uppercase;
+	color: $turquoise;
+}
+
+.resume-section-body {
+	width: 80%;
+	float: left;
+}
+.resume-subsection {
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+.resume-skill {
+	width: 100%;
+	margin-bottom: 10px;
+	display: inline-block;
+}
+
+.experience-name, .education-name {
+	text-transform: uppercase;
+	font-weight: 400;
+}
+
+.experience-name {
+	padding-right: 5px;
+		&:after {
+			margin-left: 5px;
+			content: "|";
+		}
+
+}
+
+.experience-position {
+	font-weight: 400;
+}
+
+.experience-date {
+	text-transform: uppercase;
+			&:after {
+			margin-left: 5px;
+			content: "|";
+		}
+
+	padding-right: 5px;
+}
+
+.education-name {
+	width: 100%;
+	display: inline-block;
+}
+
+
+.education-concentration {
+	width: 100%;
+	display: inline-block;
+	font-style: italic;
+}
+
+//
+// PUBLICATIONS
+//
+
+#publications {
+	//height: $doc-height;
+	height: 100%;
+	padding: 20px;
+	font-family: $headerfont;
+	font-size: 18px;
+}
+
+.publication, .poster {
+	padding: 10px;
+	color: darken($asbestos, 40%);
+	margin-bottom: 20px;
+	width: 45em;
+	font-weight: 300;
+}
+
+.publication-author {
+	font-weight: 400;
+	color: $turquoise;
+}
+
+.links {
+	margin-left: 5px;
+	a {
+		text-decoration: none;
+		color: $turquoise;
+	}
+}
+
