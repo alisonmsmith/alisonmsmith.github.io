@@ -173,6 +173,9 @@ html{
 	    		width: auto;
 	    		min-width: 100%;
 	    	}
+	    	&.empty {
+	    		cusor: default;
+	    	}
 	    }
 	    dl {
 	    	opacity: 0;
