@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800);
-@import url(http://fonts.googleapis.com/css?family=Lobster);
+@import url(http://fonts.googleapis.com/css?family=Bangers);
 
 /*!
  * Clean v2.0.0
@@ -558,9 +558,10 @@ textarea.form-control {
 }
 
 .navbar-custom .navbar-brand {
+	text-transform: uppercase;
 	font-weight: 700;
 	font-size: 22px;
-    font-family: Lobster, cursive;
+    font-family: Bangers, cursive;
     color: #2c3e50;
 }
 
