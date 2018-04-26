@@ -912,7 +912,7 @@ figure.effect-bubba:hover p {
 
 .cbp-qtrotator .cbp-qtcontent.cbp-qtcurrent,
 .no-js .cbp-qtrotator .cbp-qtcontent {
-	position: relative; 
+	position: relative;
 	z-index: 100;
 	pointer-events: auto;
 	opacity: 1;
@@ -965,7 +965,7 @@ figure.effect-bubba:hover p {
 }
 
 /* Example for media query */
-@media screen and (max-width: 30.6em) { 
+@media screen and (max-width: 30.6em) {
 
 	.cbp-qtrotator {
 		font-size: 70%;
@@ -999,6 +999,11 @@ figure.effect-bubba:hover p {
 	color: #16a085;
 }
 
+.award {
+	font-weight: 600;
+	color: #16a085;
+}
+
 .links {
 	margin-left: 5px;
 	a {
@@ -1016,8 +1021,8 @@ figure.effect-bubba:hover p {
 	    position: relative;
 	    padding: 0 !important;
 	    background-color: none;
-	    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);   
-	 
+	    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.5);
+
 	    transition: 0.6s;
 	    -webkit-transition: 0.6s;
 	    -moz-transition: 0.6s;
@@ -1043,7 +1048,7 @@ figure.effect-bubba:hover p {
 		    color: #ecf0f1;
 
 		    text-align: center;
-		     
+
 		    transition: 0.6s;
 		    -webkit-transition: 0.6s;
 		    -moz-transition: 0.6s;
@@ -1074,5 +1079,3 @@ figure.effect-bubba:hover p {
 	letter-spacing: 1px;
 	font-size: .75em;
 }
-
-
