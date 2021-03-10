@@ -1008,18 +1008,17 @@ figure.effect-bubba:hover p {
 	color: #16a085;
 }
 
-.link {
-	a {
-		color: #34495e;
-		text-decoration: none;
-	}
+.link > a {
+	color: #34495e;
+	text-decoration: none;
 }
 
 .links {
 	margin-left: 5px;
-	a {
-		text-decoration: none;
-	}
+}
+
+.links > a {
+	text-decoration: none;
 }
 
 .proceedings {
