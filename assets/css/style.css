@@ -982,11 +982,15 @@ figure.effect-bubba:hover p {
 	text-transform: lowercase;
 }
 
-.publication, .workshop, .poster {
+.publication, .workshop, .poster, .talk {
 	padding: 10px;
 	color: darken($asbestos, 40%);
 	margin-bottom: 20px;
 	font-weight: 300;
+}
+
+.talk {
+	margin-bottom: 10px;
 }
 
 .publication-title {
